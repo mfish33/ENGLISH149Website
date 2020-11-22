@@ -1,0 +1,29 @@
+<div class="lessons">
+    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
+        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
+        <div class="hover">
+            <h1>{{lesson.id}}</h1>
+        </div>
+    </div>
+    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
+        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
+        <div class="hover">
+            <h1>{{lesson.id}}</h1>
+        </div>
+    </div>
+    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
+        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
+        <div class="hover">
+            <h1>{{lesson.id}}</h1>
+        </div>
+    </div>
+    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
+        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
+        <div class="hover">
+            <h1>{{lesson.id}}</h1>
+        </div>
+    </div>
+</div>
+<footer>
+    <h2>Instructions by: Max Fisher, Truman Giessen, Janet Flores, Justin Gearly and Reese Gardner</h2>
+</footer>
