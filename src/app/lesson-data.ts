@@ -52,7 +52,7 @@ export const lessons: (lessonVid | lessonImg)[] = [
     },
     {
         id: 'Use-the-lug-wrench-to-loosen-the-lug-nuts',
-        shortName: 'Loosen Lugnuts',
+        shortName: 'Loosen Lug Nuts',
         img: 'removingLugnuts.png',
         background: 'background4.png',
         /*html*/
@@ -89,14 +89,14 @@ export const lessons: (lessonVid | lessonImg)[] = [
         `
     },
     {
-        id: 'Remove-the-lugnuts-and-tire',
+        id: 'Remove-the-lug-nuts-and-tire',
         vid: 'removingTheTire.mp4',
-        shortName: 'Remove Lugnuts',
+        shortName: 'Remove Lug Nuts',
         img: 'removingLugnutsHand.png',
         background: 'background1.png',
         /*html*/
         content: `
-            <h2><u>Remove the lugnuts and tire</u></h2>
+            <h2><u>Remove the lug nuts and tire</u></h2>
             <p>Use the lug wrench to finish removing the loose lug nuts. Once they are all off, place them in a safe spot and remove the tire. Securely grip the tire and pull towards you to remove. Set the flat tire aside.</p>   
         `
     },
@@ -114,7 +114,7 @@ export const lessons: (lessonVid | lessonImg)[] = [
     },
     {
         id: 'Replace-the-lug-nuts',
-        shortName: 'Replacing Lugnuts',
+        shortName: 'Replacing Lug Nuts',
         img: 'placeSpare.png',
         background: 'background3.png',
         /*html*/
@@ -140,7 +140,7 @@ export const lessons: (lessonVid | lessonImg)[] = [
     },
     {
         id: 'Fully-tighten-lug-nuts',
-        shortName: 'Tighten Lugnuts',
+        shortName: 'Tighten Lug Nuts',
         img: 'tightenLugNuts.png',
         background: 'background5.png',
         /*html*/
