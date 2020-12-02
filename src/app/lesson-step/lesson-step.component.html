@@ -1,5 +1,13 @@
-<mat-card>
-    <img *ngIf="img" class="titleImage" [src]="'assets/'+img" alt="">
-    <div class="content" [innerHTML]="content">
-    </div>
+<mat-card class="mainCard">
+    <img *ngIf="!video" class="titleImage" [src]="'assets/'+img" alt="">
+    <video *ngIf="video" controls muted>
+        <source [src]="'assets/'+video" type="video/mp4">
+    </video>
+    <div class="content" [innerHTML]="contentSanitized"></div>
+    <mat-card *ngIf="caution" class="caution">
+        <h3><u>Caution:</u></h3>
+        <ul>
+            <li *ngFor="let item of caution">{{item}}</li>
+        </ul>
+    </mat-card>
 </mat-card>

@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { SecurityContext } from '@angular/core';
 
 @Component({
   selector: 'app-lesson-step',
@@ -7,13 +9,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LessonStepComponent implements OnInit {
 
-  @Input() video:string
-  @Input() img:string
-  @Input() content:string
+  @Input() video: string
+  @Input() img: string
+  @Input() content: string
+  @Input() caution: string[] | undefined
 
-  constructor() { }
+  public contentSanitized
+
+  constructor(
+    private sanitizer: DomSanitizer
+  ) { }
 
   ngOnInit(): void {
+    this.contentSanitized = this.sanitizer.sanitize(SecurityContext.HTML, this.content)
   }
 
 }

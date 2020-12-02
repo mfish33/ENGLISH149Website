@@ -1,20 +1,32 @@
 @import './src/styles.scss';
 
-mat-card{
+.mainCard{
     width: 700px;
     $card-radius:8px;
     border-radius: $card-radius;
     background-color: $blue-primary !important;
     padding: 0;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
 
     img{
         width: 100%;
-        border-radius: $card-radius;
+        border-radius: $card-radius $card-radius 0 0; 
+    }
+    
+    video{
+        width: 100%;
+        border-radius: $card-radius $card-radius 0 0; 
     }
     .content{
         color: white;
         padding: 16px;
+    }
+    .caution{
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: $card-radius;
+        color: #ff9966;
     }
 }
 

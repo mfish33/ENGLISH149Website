@@ -3,11 +3,12 @@
 </div>
 <div *ngIf="lesson$ | async as lesson">
     <app-background-image [src]="'assets/' + lesson.background"></app-background-image>
-    <app-lesson-step [img]="lesson['img']" [content]="lesson.content"></app-lesson-step>
+    <app-lesson-step [img]="lesson['img']" [content]="lesson.content" [caution]="lesson.caution" [video]="lesson?.vid">
+    </app-lesson-step>
     <div class="leftBtn" *ngIf="buttonRoutes.back">
         <div class="triangle" [routerLink]="['../',buttonRoutes.back]"></div>
     </div>
-    <div class="rightBtn"*ngIf="buttonRoutes.forward">
+    <div class="rightBtn" *ngIf="buttonRoutes.forward">
         <div class="triangle" [routerLink]="['../',buttonRoutes.forward]"></div>
     </div>
 </div>

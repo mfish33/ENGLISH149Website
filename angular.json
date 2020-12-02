@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ENGLISH149Website"
+    }
+  },
+  "defaultProject": "ENGLISH149Website",
+  "cli": {
+    "analytics": false
+  }
 }

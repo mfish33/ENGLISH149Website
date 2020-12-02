@@ -2,25 +2,7 @@
     <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
         <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
         <div class="hover">
-            <h1>{{lesson.id}}</h1>
-        </div>
-    </div>
-    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
-        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
-        <div class="hover">
-            <h1>{{lesson.id}}</h1>
-        </div>
-    </div>
-    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
-        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
-        <div class="hover">
-            <h1>{{lesson.id}}</h1>
-        </div>
-    </div>
-    <div class="lesson" *ngFor="let lesson of lessons" [routerLink]="['steps',lesson.id]">
-        <app-image-tile [src]="'assets/' + lesson.img"></app-image-tile>
-        <div class="hover">
-            <h1>{{lesson.id}}</h1>
+            <h1>{{lesson.shortName}}</h1>
         </div>
     </div>
 </div>

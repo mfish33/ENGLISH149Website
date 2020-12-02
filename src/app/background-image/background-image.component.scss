@@ -13,4 +13,9 @@
         height:100%;    
         width: auto;
     }
+    img{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        transform: scale(1.1); 
+    }
 }
