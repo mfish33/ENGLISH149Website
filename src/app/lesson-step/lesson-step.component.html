@@ -1,6 +1,6 @@
 <mat-card class="mainCard">
     <img *ngIf="!video" class="titleImage" [src]="'assets/'+img" alt="">
-    <video *ngIf="video" controls muted>
+    <video *ngIf="video" controls [muted]="true">
         <source [src]="'assets/'+video" type="video/mp4">
     </video>
     <div class="content" [innerHTML]="contentSanitized"></div>
